@@ -39,3 +39,34 @@ color: #00C851
 .margin-bottom{
     margin-bottom: 10%;
 }
+
+
+/* Breadcrumb Component Starts */
+.bcrumbs-size{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.img-bread{
+    height: 100%;
+}
+.brc-img{
+    background-image: url('./img/bcrumbs-bg.jpg');
+    height: 100%;
+    width:  100%;
+}
+.brc-content{
+    margin-top: 10%;
+    margin-bottom: auto;
+}
+.brc-ins-cont{
+    margin-bottom: 5%;
+}
+.brc-header{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    font-size: 50px;
+}
+.brc-bread-link{
+    
+}
+/* Breadcrumb Component Ends */
