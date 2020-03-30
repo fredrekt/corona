@@ -107,7 +107,7 @@ class FullPageIntroWithFixedTransparentNavbar extends React.Component {
               be safe. Below is where you can request prayers or pray with us. Everyone needs our prayers, the doctors, 
               the frontliners, the nurses and everyone that is helping to treat this pandemic.
             </p>
-            <MDBBtn outline color="white">
+            <MDBBtn target="_blank" href="/contact" outline color="white">
               Pray with us
             </MDBBtn>
           </MDBCarouselCaption>
