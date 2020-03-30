@@ -1,11 +1,13 @@
 import React from 'react'
 import {MDBContainer} from "mdbreact";
 import ContactForm from './components/contact/ContactForm';
+import BreadcrumbsPage from './BreadcrumbsPage'
 
 const ContactComponent = () =>{
     return(
-        <div style={{'margin-top':'10%','margin-bottom':'10%'}}>
-            <MDBContainer>
+        <div id="contactUS">
+            <BreadcrumbsPage bheader="Helping Others" bcurrent="Contact"/>
+            <MDBContainer style={{'margin-top':'5%','margin-bottom':'5%'}}>
                 <ContactForm/>
             </MDBContainer>
         </div>

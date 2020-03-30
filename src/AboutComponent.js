@@ -1,9 +1,15 @@
 import React from 'react'
+import {MDBContainer} from "mdbreact";
+import DeveloperPage from './DeveloperPage'
+import BreadcrumbsPage from './BreadcrumbsPage'
 
 const AboutComponent = () =>{
     return(
         <div>
-            <h1>Welcome to contact</h1>
+            <BreadcrumbsPage bheader="About Corona Tracker" bcurrent="About"/>
+            <MDBContainer>
+                <DeveloperPage/>
+            </MDBContainer>
         </div>
     );
 }
