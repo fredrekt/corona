@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBCard, MDBCardBody, MDBCol, MDBRow,
-     MDBContainer, MDBCardTitle, MDBIcon } from "mdbreact";
+     MDBContainer, MDBCardTitle, MDBIcon, MDBBadge } from "mdbreact";
      
 const PanelPage = (props) => {
 return (
@@ -9,7 +9,7 @@ return (
     <h1 className="display-4">Corona Virus Statistics of {props.country}</h1>
     <hr width="50%"/>
     <p className="grey-text">
-      Below are real-time data of the corona virus of this country
+      Below are real-time data of the corona virus of this country  <MDBBadge color="danger">Live</MDBBadge>
     </p>
   </div>
   <MDBRow>
