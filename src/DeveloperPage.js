@@ -44,63 +44,38 @@ const DeveloperPage = () => {
 
             <MDBCol md="8">
               <MDBContainer style={{"margin-left":"20%"}}>
-                <div className="content">
+                <div hoverable className="content">
                   <h3 className="display-5">
                     Purpose of this application
                   </h3>
                   <p className="grey-text">
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
+                  The outbreak of coronavirus disease (COVID-19) has been declared a Public Health Emergency of 
+                  International Concern (PHEIC) and the virus has now spread to many countries and territories. 
+                  The purpose of this application is to provide clean and actionable data regarding the number of 
+                  people or population that had been confirmed and transmitted by the virus that caused COVID-19. 
+                  Awareness of the present virus in the community is very important to prevent the spread of the viruses.
                 </p>
-
-                <div>
-                  <h3>
+                <hr/>
+                <div hoverable>
+                  <h3 className="display-5">
                     Why now?
                   </h3>
-                  <p>
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
+                  <p className="grey-text">
+                  The proliferation of misleading information about the COVID-19 pandemic has been labelled a dangerous 
+                  in terms of inaccuracies. These data may contain useless, incorrect or even harmful information which 
+                  can hamper the public response and could add social disorder. Our goal is to provide the precise data 
+                  to deliver information and present accuracy with its true value.
                   </p>
                 </div>
-
+                <hr/>
                 
-                <div>
-                  <h3>
+                <div hoverable>
+                  <h3 className="display-5">
                     Features
                   </h3>
-                  <p>
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
-                  Neque porro quisquam 
-                  est, qui dolorem ipsum quia dolor sit amet,
-                  consectetur, adipisci sed 
-                  quia non numquam modi tempora eius.
+                  <p className="grey-text">
+                  This application feature uses Geolocation and real time data api. The data provided are from an api and 
+                  the location is used to factor in the data that is being shown. Also has a feature to request prayers.
                   </p>
                 </div>
 
