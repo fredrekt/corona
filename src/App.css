@@ -20,3 +20,22 @@ Total Recovered
 class: success-color
 color: #00C851
 */
+.c-header{
+    margin-bottom: 10%;
+    margin-top: auto;
+}
+.headline-1{
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    letter-spacing: 0.04em;
+}
+.headline-2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+}
+.margin-bottom{
+    margin-bottom: 10%;
+}
