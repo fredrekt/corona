@@ -5,7 +5,7 @@ const PreventionPage = () => {
   return (
     <section className="my-5">
         <MDBContainer className="mt-5 mb-5">
-        <h2 className="h1-responsive font-weight-bold text-center display-4">
+        <h2 className="display-4 text-center display-4">
           What can you do?
         </h2>
         <hr width="20%"/>
