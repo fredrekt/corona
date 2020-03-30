@@ -6,7 +6,7 @@ const ContactForm = () => {
     <MDBContainer>
       <MDBCard>
         <MDBCardBody>
-      <h2 className="headline-2 text-uppercase font-weight-bold text-center mt-5">
+      <h2 style={{'font-size':'40px'}} className="display-5 text-center mt-5">
         Prayer Warriors
       </h2>
       <hr width="15%"/>
@@ -51,7 +51,7 @@ const ContactForm = () => {
                     required
                     type="textarea"
                     id="contact-message"
-                    label="Your message"
+                    label="Your message and prayer requests  "
                   />
                 </div>
               </MDBCol>
