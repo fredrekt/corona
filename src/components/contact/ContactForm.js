@@ -54,13 +54,13 @@ const ContactForm = () => {
                   />
                 </div>
               </MDBCol>
-            </MDBRow>
-          </form>
+            </MDBRow>    
           <div className="text-center text-md-left">
             <MDBBtn type="submit" color="primary" size="md">
               Send
             </MDBBtn>
           </div>
+          </form>
         </MDBCol>
         <MDBCol md="3" className="text-center">
           <ul className="list-unstyled mb-0">
