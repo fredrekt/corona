@@ -69,7 +69,7 @@ const CarouselPage = () =>{
               be safe. Below is where you can request prayers or pray with us. Everyone needs our prayers, the doctors, 
               the frontliners, the nurses and everyone that is helping to treat this pandemic.
             </p>
-            <Link target="_blank" to="/contact">
+            <Link to="/contact">
               <MDBBtn outline color="white">
               Pray with us
               </MDBBtn>
