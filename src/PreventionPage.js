@@ -17,7 +17,7 @@ const PreventionPage = () => {
           <MDBCol lg="5" className="text-center text-lg-left">
             <img
               className="img-fluid"
-              src="https://cdn3.vectorstock.com/i/1000x1000/84/72/virus-covid-19-quarantine-man-and-staff-medical-vector-30148472.jpg"
+              src="https://github.com/fredrekt/corona/blob/master/src/img/vector_containment.jpg?raw=true"
               alt="Vector Image with quarantine"
             />
             <div className="mt-5">
