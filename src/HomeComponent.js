@@ -23,7 +23,7 @@ export default class HomeComponent extends Component{
         var countryList = require("country-list")
         var request = require("request");
 
-        var countryName = countryList.getName('IT')
+        var countryName = countryList.getName('PH')
          
 
         var options = {
