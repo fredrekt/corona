@@ -41,7 +41,7 @@ export default class PieChart extends Component{
             // console.log("Country:"+obj.response[0].country)
             
             //this.setState({casesnew:obj.response[0].cases.new })
-        });
+        }.bind(this));
         }
         clicked(){
             //e.preventDefault();
@@ -52,21 +52,21 @@ export default class PieChart extends Component{
     render(){
         const data = {
             labels: [
-                'Red',
-                'Green',
-                'Yellow'
+                'New Cases',
+                'Recent Deaths',
+                'Active Cases'
             ],
             datasets: [{
-                data: [this.state.casesnew, 50, 100],
+                data: [this.props.ncases, this.props.rdeaths, this.props.active],
                 backgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56'
+                '#ffbb33',
+                '#212121',
+                '#33b5e5'
                 ],
                 hoverBackgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56'
+                '#ffbb33',
+                '#212121',
+                '#33b5e5'
                 ]
             }]
         };
