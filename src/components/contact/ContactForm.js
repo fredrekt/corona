@@ -17,7 +17,8 @@ const ContactForm = () => {
       </p>
       <MDBRow>
         <MDBCol md="9" className="md-0 mb-5">
-          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <form name="contact" method="POST" >
+          <input type="hidden" name="form-name" value="contact" />
             <MDBRow>
               <MDBCol md="6">
                 <div className="md-form mb-0">
