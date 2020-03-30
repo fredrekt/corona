@@ -1,6 +1,6 @@
 import React from "react";
 import {  MDBRow, MDBCol, MDBIcon, MDBContainer } from "mdbreact";
-
+import vectorimage from './img/vector_containment.jpg'
 const PreventionPage = () => {
   return (
     <section className="my-5">
@@ -17,7 +17,7 @@ const PreventionPage = () => {
           <MDBCol lg="5" className="text-center text-lg-left">
             <img
               className="img-fluid"
-              src="https://github.com/fredrekt/corona/blob/master/src/img/vector_containment.jpg?raw=true"
+              src={vectorimage}
               alt="Vector Image with quarantine"
             />
             <div className="mt-5">
