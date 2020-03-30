@@ -5,6 +5,8 @@ import Doughnut from './Doughnut'
 import JumbotronPage from './JumbotronPage'
 import SpinnerPage from './SpinnerPage'
 import CarouselPage from './CarouselPage'
+import GeoLocation from './GeoLocation';
+
 
 export default class HomeComponent extends Component{
     state = {
@@ -18,14 +20,16 @@ export default class HomeComponent extends Component{
     }
 
     componentDidMount(){
-        var search = this.state.search
+        var countryList = require("country-list")
         var request = require("request");
-        
+
+        var countryName = countryList.getName('IT')
+         
 
         var options = {
         method: 'GET',
         url: 'https://covid-193.p.rapidapi.com/statistics',
-        qs: {country: search},
+        qs: {country: countryName},
         headers: {
             'x-rapidapi-host': 'covid-193.p.rapidapi.com',
             'x-rapidapi-key': '2c0aa52ce7msh240a02a5770adccp17173ajsn0bb6849ac49d'
@@ -38,25 +42,23 @@ export default class HomeComponent extends Component{
             active_case:<SpinnerPage/>,
             recovered:<SpinnerPage/>,
             total_deaths:<SpinnerPage/>,
-            deaths_new:<SpinnerPage/>
+            deaths_new:<SpinnerPage/>,
+            search: countryName
         });
 
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
 
-            console.log(response.body)
+            //console.log(response.body)
             var obj = JSON.parse(response.body)
             console.log("New Cases:"+obj.response[0].cases.new)
             console.log("Recovered:"+obj.response[0].cases.recovered)
             console.log("Total Deaths:"+obj.response[0].deaths.total)
             console.log("Recent Deaths:"+obj.response[0].deaths.new)
             console.log("Total Infected:"+obj.response[0].cases.total)
-            console.log("Country:"+obj.response[0].country)
             console.log("Update Day:"+obj.response[0].day)
             console.log("Country:"+obj.response[0].country)
-
-            //body.send(obj)
-
+            console.log("Current Country:"+this.state.search)
             this.setState({
                 newcases:obj.response[0].cases.new,
                 total_infected:obj.response[0].cases.total,
@@ -71,10 +73,11 @@ export default class HomeComponent extends Component{
         e.preventDefault()
         this.setState({newcase:'changed'})
     }
-    render(){
+    render(){    
         return(
             <div>
             <CarouselPage/>
+            <GeoLocation/>
             <JumbotronPage/>
             <PanelPage 
             country={this.state.search}
