@@ -3,6 +3,7 @@ import PreventionPage from './PreventionPage'
 import PanelPage from './PanelPage'
 import Doughnut from './Doughnut'
 import JumbotronPage from './JumbotronPage'
+import SpinnerPage from './SpinnerPage'
 
 export default class HomeComponent extends Component{
     state = {
@@ -11,6 +12,7 @@ export default class HomeComponent extends Component{
         total_deaths: '',
         deaths_new: '',
         total_infected: '',
+        active_case: '',
         search: 'Philippines'
     }
 
@@ -28,6 +30,15 @@ export default class HomeComponent extends Component{
             'x-rapidapi-key': '2c0aa52ce7msh240a02a5770adccp17173ajsn0bb6849ac49d'
         }
         };
+        this.setState({
+            total_infected: <SpinnerPage/>,
+            newcases:<SpinnerPage/>,
+            total_infected:<SpinnerPage/>,
+            active_case:<SpinnerPage/>,
+            recovered:<SpinnerPage/>,
+            total_deaths:<SpinnerPage/>,
+            deaths_new:<SpinnerPage/>
+        });
 
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
@@ -72,7 +83,11 @@ export default class HomeComponent extends Component{
             active_case={this.state.active_case}
             case_recovered={this.state.recovered}
             />
-            <Doughnut/>
+            <Doughnut
+            ncases={this.state.newcases}
+            rdeaths={this.state.deaths_new}
+            active={this.state.active_case}
+            />
             <PreventionPage/>
 
             </div>
