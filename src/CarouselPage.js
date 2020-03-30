@@ -2,6 +2,7 @@ import React from 'react'
 import { MDBMask, MDBView, MDBBtn,
     MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCarouselCaption } 
     from 'mdbreact';
+import {Link} from 'react-router-dom'
     
 const CarouselPage = () =>{
     return(
@@ -68,9 +69,11 @@ const CarouselPage = () =>{
               be safe. Below is where you can request prayers or pray with us. Everyone needs our prayers, the doctors, 
               the frontliners, the nurses and everyone that is helping to treat this pandemic.
             </p>
-            <MDBBtn target="_blank" href="/contact" outline color="white">
+            <Link target="_blank" to="/contact">
+              <MDBBtn outline color="white">
               Pray with us
-            </MDBBtn>
+              </MDBBtn>
+            </Link>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
