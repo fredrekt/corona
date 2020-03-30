@@ -4,6 +4,7 @@ import PanelPage from './PanelPage'
 import Doughnut from './Doughnut'
 import JumbotronPage from './JumbotronPage'
 import SpinnerPage from './SpinnerPage'
+import CarouselPage from './CarouselPage'
 
 export default class HomeComponent extends Component{
     state = {
@@ -73,6 +74,7 @@ export default class HomeComponent extends Component{
     render(){
         return(
             <div>
+            <CarouselPage/>
             <JumbotronPage/>
             <PanelPage 
             country={this.state.search}
