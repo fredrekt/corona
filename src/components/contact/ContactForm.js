@@ -22,7 +22,7 @@ const ContactForm = () => {
             <MDBRow>
               <MDBCol md="6">
                 <div className="md-form mb-0">
-                  <MDBInput type="text" id="contact-name" name="name" label="Your name" />
+                  <MDBInput required type="text" id="contact-name" name="name" label="Your name" />
                 </div>
               </MDBCol>
               <MDBCol md="6">
@@ -39,7 +39,7 @@ const ContactForm = () => {
             <MDBRow>
               <MDBCol md="12">
                 <div className="md-form mb-0">
-                  <MDBInput name="subject" type="text" id="contact-subject" label="Subject" />
+                  <MDBInput required name="subject" type="text" id="contact-subject" label="Subject" />
                 </div>
               </MDBCol>
             </MDBRow>
@@ -48,6 +48,7 @@ const ContactForm = () => {
                 <div className="md-form mb-0">
                   <MDBInput
                     name="message"
+                    required
                     type="textarea"
                     id="contact-message"
                     label="Your message"
