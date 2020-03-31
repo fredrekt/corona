@@ -18,7 +18,7 @@ const PreventionPage = () => {
             <img
               className="img-fluid"
               src={vectorimage}
-              alt="Vector Image with quarantine"
+              alt="Vector with quarantine"
             />
             <div className="mt-5">
             <h5 className="font-weight-bold mb-3">When to go to the hospital: </h5>

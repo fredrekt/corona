@@ -10,45 +10,6 @@ export default class PieChart extends Component{
           data: [],
         };
       }
-      componentDidMount(){
-        var search = this.state.search
-        var request = require("request");
-        
-
-        var options = {
-        method: 'GET',
-        url: 'https://covid-193.p.rapidapi.com/statistics',
-        qs: {country: search},
-        headers: {
-            'x-rapidapi-host': 'covid-193.p.rapidapi.com',
-            'x-rapidapi-key': '2c0aa52ce7msh240a02a5770adccp17173ajsn0bb6849ac49d'
-        }
-        };
-
-        request(options, function (error, response, body) {
-            if (error) throw new Error(error);
-
-            //console.log(JSON.parse(body));
-            // console.log(response.body)
-            // var obj = JSON.parse(response.body)
-            // console.log("New Cases:"+obj.response[0].cases.new)
-            // console.log("Recovered:"+obj.response[0].cases.recovered)
-            // console.log("Total Deaths:"+obj.response[0].deaths.total)
-            // console.log("Recent Deaths:"+obj.response[0].deaths.new)
-            // console.log("Total Infected:"+obj.response[0].cases.total)
-            // console.log("Country:"+obj.response[0].country)
-            // console.log("Update Day:"+obj.response[0].day)
-            // console.log("Country:"+obj.response[0].country)
-            
-            //this.setState({casesnew:obj.response[0].cases.new })
-        }.bind(this));
-        }
-        clicked(){
-            //e.preventDefault();
-            console.log('clicked')
-            //window.location.reload();
-            this.setState({search:'China'})
-        }
     render(){
         const data = {
             labels: [

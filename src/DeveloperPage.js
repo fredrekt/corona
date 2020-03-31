@@ -16,10 +16,9 @@ const DeveloperPage = () => {
           <MDBRow>
             <MDBCol lg="3" md="4" className="mb-lg-0 mb-5">
               <img
-                tag="img"
                 src={pp}
                 className="rounded-circle z-depth-1 img-fluid"
-                alt="Application Developer Picture"
+                alt="Application Developer"
                 title="Application Developer" 
               />
               <h5 className="font-weight-bold mt-4 mb-3">Fredrick Garingo</h5>
