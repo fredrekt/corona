@@ -9,23 +9,45 @@ import GeoLocation from './GeoLocation';
 
 
 export default class HomeComponent extends Component{
-    state = {
-        newcases: '',
-        recovered: '',
-        total_deaths: '',
-        deaths_new: '',
-        total_infected: '',
-        active_case: '',
-        search: 'Philippines'
+    constructor(props){
+        super(props)
+        this.state = {
+            newcases: '',
+            recovered: '',
+            total_deaths: '',
+            deaths_new: '',
+            total_infected: '',
+            active_case: '',
+            search: 'Philippines',
+            data: ''
+        }
     }
 
-    componentDidMount(){
+    componentDidMount(){        
         var countryList = require("country-list")
         var request = require("request");
 
-        var countryName = countryList.getName('PH')
-         
+        //fetching country code throught api
+        fetch('http://api.geonames.org/countryCodeJSON?lat=10.272768&lng=123.85976319999997&username=brix')
+        .then(response=>response.json())
+        .then(data=>this.setState({data}))
 
+        
+        var countryName = countryList.getName('PH')
+
+        //spinners 
+        this.setState({
+            total_infected: <SpinnerPage/>,
+            newcases:<SpinnerPage/>,
+            active_case:<SpinnerPage/>,
+            recovered:<SpinnerPage/>,
+            total_deaths:<SpinnerPage/>,
+            deaths_new:<SpinnerPage/>,
+            search: countryName
+        });
+        //end spinners
+
+        console.log(this.state.data)
         var options = {
         method: 'GET',
         url: 'https://covid-193.p.rapidapi.com/statistics',
@@ -35,16 +57,6 @@ export default class HomeComponent extends Component{
             'x-rapidapi-key': '2c0aa52ce7msh240a02a5770adccp17173ajsn0bb6849ac49d'
         }
         };
-        this.setState({
-            total_infected: <SpinnerPage/>,
-            newcases:<SpinnerPage/>,
-            total_infected:<SpinnerPage/>,
-            active_case:<SpinnerPage/>,
-            recovered:<SpinnerPage/>,
-            total_deaths:<SpinnerPage/>,
-            deaths_new:<SpinnerPage/>,
-            search: countryName
-        });
 
         request(options, function (error, response, body) {
             if (error) throw new Error(error);
@@ -59,6 +71,7 @@ export default class HomeComponent extends Component{
             console.log("Update Day:"+obj.response[0].day)
             console.log("Country:"+obj.response[0].country)
             console.log("Current Country:"+this.state.search)
+            console.log("This is a state value: "+this.state.data.countryName)
             this.setState({
                 newcases:obj.response[0].cases.new,
                 total_infected:obj.response[0].cases.total,
@@ -74,6 +87,7 @@ export default class HomeComponent extends Component{
         this.setState({newcase:'changed'})
     }
     render(){    
+        //console.log(this.state.data)
         return(
             <div>
             <CarouselPage/>
