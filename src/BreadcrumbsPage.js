@@ -1,7 +1,6 @@
 import React from 'react'
-import { MDBContainer, MDBView, MDBMask, MDBBreadcrumb, MDBBreadcrumbItem } from 'mdbreact'
-import bgcrumbs from './img/bcrumbs-bg.jpg'
-import { Link } from 'react-router-dom'
+import { MDBMask } from 'mdbreact'
+
 
 const BreadcrumbsPage = (props) =>{
     return(
