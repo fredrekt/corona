@@ -18,6 +18,7 @@ export default class HomeComponent extends Component{
             deaths_new: '',
             total_infected: '',
             active_case: '',
+            updated_at: '',
             search: 'Philippines',
             data: ''
         }
@@ -78,7 +79,8 @@ export default class HomeComponent extends Component{
                 active_case:obj.response[0].cases.active,
                 recovered:obj.response[0].cases.recovered,
                 total_deaths:obj.response[0].deaths.total,
-                deaths_new:obj.response[0].deaths.new
+                deaths_new:obj.response[0].deaths.new,
+                updated_at: obj.response[0].day
             })
         }.bind(this));
     }
@@ -101,6 +103,7 @@ export default class HomeComponent extends Component{
             new_case ={this.state.newcases}
             active_case={this.state.active_case}
             case_recovered={this.state.recovered}
+            updatedat={this.state.updated_at}
             />
             <Doughnut
             ncases={this.state.newcases}
