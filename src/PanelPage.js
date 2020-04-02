@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCol, MDBRow,
+import { MDBCard, MDBCardBody, MDBCol, MDBRow, MDBTooltip,
      MDBContainer, MDBCardTitle, MDBIcon, MDBBadge } from "mdbreact";
      
 const PanelPage = (props) => {
@@ -9,7 +9,17 @@ return (
     <h1 className="display-4">Corona Virus Statistics of {props.country}</h1>
     <hr width="50%"/>
     <p className="grey-text">
-      Below are real-time data of the corona virus of this country  <MDBBadge color="danger">Live</MDBBadge>
+      Below are real-time data of the corona virus of this country &nbsp; 
+      <MDBTooltip
+          domElement
+          tag="span"
+          placement="bottom"
+        >
+          <span className="blue-text">
+            <MDBBadge color="danger">Live</MDBBadge> 
+          </span>
+          <span>last updated at: {props.updatedat}</span>
+        </MDBTooltip>
     </p>
   </div>
   <MDBRow>
