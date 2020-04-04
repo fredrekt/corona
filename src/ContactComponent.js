@@ -4,6 +4,7 @@ import ContactForm from './components/contact/ContactForm';
 import BreadcrumbsPage from './components/BreadcrumbsPage'
 
 const ContactComponent = () =>{
+    document.title = "Pray with us"
     return(
         <div class="contact-vector" id="contactUS">
             <BreadcrumbsPage bheader="Helping Others" bcurrent="Contact"/>

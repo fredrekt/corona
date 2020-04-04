@@ -91,6 +91,7 @@ export default class HomeComponent extends Component{
     }
     render(){    
         //console.log(this.state.data)
+        document.title ="Corona Virus Country Tracker"
         return(
             <div>
             <CarouselPage/>
