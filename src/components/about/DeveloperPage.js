@@ -1,6 +1,6 @@
 import React from "react";
 import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBContainer } from "mdbreact";
-import pp from './img/pp.jpg'
+import pp from '../../img/pp.jpg'
 
 const DeveloperPage = () => {
   return (
