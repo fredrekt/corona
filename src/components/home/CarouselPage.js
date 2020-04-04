@@ -77,7 +77,7 @@ const CarouselPage = () =>{
                 the frontliners, the nurses and everyone that is helping to treat this pandemic.
               </p>
             </div>
-            <Link to="/contact">
+            <Link target="_blank" to="/contact">
               <MDBBtn outline color="white">
               Pray with us
               </MDBBtn>
