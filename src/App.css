@@ -74,6 +74,12 @@ color: #00C851
         text-align: center;
     }
 }
+@media only screen and (max-width: 420px) {
+    .headline-1{
+      display:none;
+      padding:20px;
+    } 
+}
 /* Carousel Component Ends */
 
 
