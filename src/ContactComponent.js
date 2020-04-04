@@ -1,7 +1,7 @@
 import React from 'react'
 import {MDBContainer} from "mdbreact";
 import ContactForm from './components/contact/ContactForm';
-import BreadcrumbsPage from './BreadcrumbsPage'
+import BreadcrumbsPage from './components/BreadcrumbsPage'
 
 const ContactComponent = () =>{
     return(

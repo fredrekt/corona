@@ -1,7 +1,7 @@
 import React from 'react'
 import {MDBContainer} from "mdbreact";
 import DeveloperPage from './components/about/DeveloperPage'
-import BreadcrumbsPage from './BreadcrumbsPage'
+import BreadcrumbsPage from './components/BreadcrumbsPage'
 
 const AboutComponent = () =>{
     return(
