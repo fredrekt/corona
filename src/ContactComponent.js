@@ -5,7 +5,7 @@ import BreadcrumbsPage from './BreadcrumbsPage'
 
 const ContactComponent = () =>{
     return(
-        <div id="contactUS">
+        <div class="contact-vector" id="contactUS">
             <BreadcrumbsPage bheader="Helping Others" bcurrent="Contact"/>
             <MDBContainer style={{'margin-top':'5%','margin-bottom':'5%'}}>
                 <ContactForm/>
