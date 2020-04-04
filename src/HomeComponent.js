@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import PreventionPage from './PreventionPage'
-import PanelPage from './PanelPage'
-import Doughnut from './Doughnut'
-import JumbotronPage from './JumbotronPage'
-import SpinnerPage from './SpinnerPage'
-import CarouselPage from './CarouselPage'
-import GeoLocation from './GeoLocation';
+import PreventionPage from './components/home/PreventionPage'
+import PanelPage from './components/home/PanelPage'
+import Doughnut from './components/home/Doughnut'
+import JumbotronPage from './components/home/JumbotronPage'
+import SpinnerPage from './components/SpinnerPage'
+import CarouselPage from './components/home/CarouselPage'
+import GeoLocation from './components/home/GeoLocation';
 
 
 export default class HomeComponent extends Component{

@@ -1,6 +1,6 @@
 import React from "react";
 import {  MDBRow, MDBCol, MDBIcon, MDBContainer } from "mdbreact";
-import vectorimage from '../img/vector_containment.jpg'
+import vectorimage from '../../img/vector_containment.jpg'
 const PreventionPage = () => {
   return (
     <section className="my-5">
