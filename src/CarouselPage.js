@@ -23,17 +23,21 @@ const CarouselPage = () =>{
             />
           <MDBMask overlay="black-strong" />
           </MDBView>
-          <MDBCarouselCaption>
+          <MDBCarouselCaption className="who-content">
             <div className="c-header text-left">
               <h3 className="headline-1 text-uppercase">
-                World Health <br/>Organization
+                World Health <br/> Organization
               </h3>
-              <p className="headline-2 ml-1">
-                Current news update of covid 19
-              </p>
-              <MDBBtn target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" color="white" outline>
-                Go to the news page
-              </MDBBtn>
+              <div className="header-content">
+                <p className="header-content ml-2">
+                  A news article about the news update of the corona virus.
+                </p>
+              </div>
+              <div className="who-button">
+                <MDBBtn target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" color="white" outline>
+                  Go to the news page
+                </MDBBtn>
+              </div>
             </div>
           </MDBCarouselCaption>
         </MDBCarouselItem>
@@ -48,7 +52,9 @@ const CarouselPage = () =>{
           </MDBView>
           <MDBCarouselCaption className="margin-bottom">
             <h3 className="headline-1 text-uppercase">CNN news of covid 19</h3>
-            <p>CNN is an American news-based pay television channel owned by AT&T's WarnerMedia. </p>
+            <div className="header-content">
+              <p>CNN is an American news-based pay television channel owned by AT&T's WarnerMedia. </p>
+            </div>
             <MDBBtn target="_blank" href="https://edition.cnn.com/world/live-news/coronavirus-outbreak-03-30-20-intl-hnk/index.html" outline color="white">
               Go to cnn page
             </MDBBtn>
@@ -65,10 +71,12 @@ const CarouselPage = () =>{
           </MDBView>
           <MDBCarouselCaption className="margin-bottom">
             <h3 className="headline-1 text-uppercase">Every prayer counts</h3>
-            <p>We need to keep on praying for the whole country and for the whole world. God bless to you all and 
-              be safe. Below is where you can request prayers or pray with us. Everyone needs our prayers, the doctors, 
-              the frontliners, the nurses and everyone that is helping to treat this pandemic.
-            </p>
+            <div className="header-content">
+              <p>We need to keep on praying for the whole country and for the whole world. God bless to you all and 
+                be safe. Below is where you can request prayers or pray with us. Everyone needs our prayers, the doctors, 
+                the frontliners, the nurses and everyone that is helping to treat this pandemic.
+              </p>
+            </div>
             <Link to="/contact">
               <MDBBtn outline color="white">
               Pray with us
