@@ -20,6 +20,8 @@ Total Recovered
 class: success-color
 color: #00C851
 */
+
+/* Carousel Component Starts */
 .c-header{
     margin-bottom: 10%;
     margin-top: auto;
@@ -72,6 +74,7 @@ color: #00C851
         text-align: center;
     }
 }
+/* Carousel Component Ends */
 
 
 /* Breadcrumb Component Starts */
@@ -104,15 +107,20 @@ color: #00C851
 }
 /* Breadcrumb Component Ends */
 
+/* Contact Component Starts */
 .contact-vector{
     background-image: url('./img/vector.png');
     background-position: 500px 300px;
     background-repeat: no-repeat;
 }
+/* Contact Component Ends */
 
+/* About Component Starts */
 .about-vector{
 
 }
+/* About Component Ends */
+
 
 
 /*
