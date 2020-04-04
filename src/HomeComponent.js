@@ -44,6 +44,7 @@ export default class HomeComponent extends Component{
             recovered:<SpinnerPage/>,
             total_deaths:<SpinnerPage/>,
             deaths_new:<SpinnerPage/>,
+            updated_at:<SpinnerPage/>,
             search: countryName
         });
         //end spinners
