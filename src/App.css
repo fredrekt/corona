@@ -30,6 +30,7 @@ color: #00C851
     font-size: 80px;
     letter-spacing: 0.04em;
 }
+
 .headline-2{
     font-family: 'Anton', sans-serif;
     font-weight: 500;
@@ -38,6 +39,38 @@ color: #00C851
 }
 .margin-bottom{
     margin-bottom: 10%;
+}
+@media only screen and (max-width: 510px) {
+    .headline-1{
+        padding:10px;
+        margin-top:1%;
+        font-size: 30px;
+        margin-bottom:0%;
+        text-align: center;
+    } 
+    .c-header, br{
+        display:inline;
+    }
+    .headline-2{
+        font-size: 15px;
+    }
+    .c-header{
+        font-size: 30px;
+        margin-bottom:0%;
+    }
+    .margin-bottom{
+        margin-bottom:0%;
+    }
+    .who-content{
+        margin-bottom:0%;
+    }
+    .header-content{
+        display:none;
+    }
+    .who-button{
+        margin-top:0;
+        text-align: center;
+    }
 }
 
 
@@ -70,3 +103,13 @@ color: #00C851
     
 }
 /* Breadcrumb Component Ends */
+
+.contact-vector{
+    background-image: url('./img/vector.png');
+    background-position: 500px 300px;
+    background-repeat: no-repeat;
+}
+
+.about-vector{
+
+}
