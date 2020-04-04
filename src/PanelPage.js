@@ -24,7 +24,7 @@ return (
   </div>
   <MDBRow>
     <MDBCol md="6" className="mb-4">
-      <MDBCard color="danger-color-dark" text="white" className="text-center mt-3">
+      <MDBCard color="danger-color-dark" text="white" className="text-center mt-3 hoverable">
           <MDBCardTitle></MDBCardTitle>
         <MDBCardBody>
           <MDBRow>
@@ -32,7 +32,7 @@ return (
                     <MDBIcon icon="biohazard" size="3x"/>
                 </MDBCol> 
                 <MDBCol className="mt-4 mr-0" md="10">
-                  Total Infected of the novel corona virus
+                  Total people infected of the corona virus
                 </MDBCol>
             </MDBRow>
             <MDBRow>
@@ -46,7 +46,7 @@ return (
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="danger-color" text="white" className="text-center mt-3">
+      <MDBCard color="danger-color" text="white" className="text-center mt-3 hoverable">
       <MDBCardTitle></MDBCardTitle>
         <MDBCardBody>
           <MDBRow>
@@ -68,7 +68,7 @@ return (
         </MDBCardBody>
       </MDBCard>
 
-      <MDBCard color="elegant-color-dark" text="white" className="text-center mt-3">
+      <MDBCard color="elegant-color-dark" text="white" className="text-center mt-3 hoverable">
       <MDBCardTitle></MDBCardTitle>
         <MDBCardBody>
           <MDBRow>
@@ -93,7 +93,7 @@ return (
     </MDBCol>
 
     <MDBCol md="6">
-      <MDBCard color="warning-color" text="white" className="text-center mt-3">
+      <MDBCard color="warning-color" text="white" className="text-center mt-3 hoverable">
       <MDBCardTitle>
  
       </MDBCardTitle>
@@ -103,7 +103,7 @@ return (
                     <MDBIcon icon="calendar-plus" size="3x"/>
                 </MDBCol> 
                 <MDBCol className="mt-4 mr-0" md="10">
-                  New cases today of the deadly virus in this country
+                  New cases today of the corona virus in this country
                 </MDBCol>
             </MDBRow>
             <MDBRow>
@@ -143,7 +143,7 @@ return (
       </MDBCard>
 
 
-      <MDBCard color="success-color" text="white" className="text-center mt-3">
+      <MDBCard color="success-color" text="white" className="text-center mt-3 hoverable">
       <MDBCardTitle></MDBCardTitle>
         <MDBCardBody>
           <MDBRow>
