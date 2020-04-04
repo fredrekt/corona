@@ -21,7 +21,7 @@ const PreventionPage = () => {
               alt="Vector with quarantine"
             />
             <div className="mt-5">
-            <h5 className="font-weight-bold mb-3">When to go to the hospital: </h5>
+            <h5 className="font-weight-bold mb-3">When to go to the hospital</h5>
                 <ul className="grey-text">
                   <li>Difficulty breathing</li>
                   <li>Persistent pain or pressure in the chest</li>
